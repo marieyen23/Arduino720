@@ -6,7 +6,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 </head>
+
 <body>
-  <p>Hello, World!</p>
+
+<h1>Code Explanation</h1>
+
+<h2>Libraries</h2>
+<ol>
+  <li><strong>DHT:</strong> Used for reading temperature and humidity from a DHT11 sensor.</li>
+  <li><strong>Ultrasonic:</strong> Used for interfacing with an ultrasonic ranger to measure distance.</li>
+  <li><strong>TFT_eSPI:</strong> Library for interfacing with a TFT display.</li>
+  <li><strong>Wire:</strong> I2C communication library.</li>
+  <li><strong>Digital_Light_TSL2561:</strong> Used for reading light intensity from a digital light sensor.</li>
+  <li><strong>Grove_LED_Bar:</strong> Library for controlling Grove LED bars.</li>
+  <li><strong>SoftwareSerial:</strong> Allows serial communication on other digital pins.</li>
+</ol>
+
+<h2>Pin Definitions</h2>
+<ul>
+  <li><strong>D0 (Motion Sensor):</strong> Detects motion.</li>
+  <li><strong>D2 (Circular LED):</strong> Circular LED for visual alerts.</li>
+  <li><strong>D4 (Ultrasound Ranger):</strong> Ultrasonic sensor for measuring distance.</li>
+  <li><strong>D6 (Temperature and Humidity Sensor):</strong> DHT11 sensor for temperature and humidity.</li>
+  <li><strong>I2C Port (Digital Light Sensor):</strong> I2C port for the digital light sensor.</li>
+  <li><strong>WIO_KEY_B:</strong> Button to activate temperature and humidity sensor.</li>
+  <li><strong>WIO_KEY_C:</strong> Button to activate motion sensor.</li>
+  <li><strong>WIO_5S_PRESS:</strong> Button to activate low beam and high beam.</li>
+</ul>
+
+<h2>Constants and Variables</h2>
+<ul>
+  <li><strong>speakerPin:</strong> Pin for the buzzer.</li>
+  <li><strong>DHTTYPE and DHTPIN:</strong> Type and pin for the DHT sensor.</li>
+  <li><strong>MOTION_SENSOR:</strong> Pin for the motion sensor.</li>
+  <li><strong>frequency:</strong> Frequency for the buzzer.</li>
+  <li><strong>light:</strong> Variable to store the light intensity.</li>
+  <li><strong>x:</strong> Boolean variable used in the main loop.</li>
+</ul>
+
+<h2>Setup Function</h2>
+<p>Initializes various sensors and peripherals. Sets up the TFT display and LED bar.</p>
+
+<h2>Loop Function</h2>
+<p>Checks for a serial command to start the system. Calls <code>getReadyMessage</code> and <code>startEngine</code> functions in response to the command.</p>
+
+<!-- ... Repeat the same pattern for other functions ... -->
+
 </body>
 </html>
